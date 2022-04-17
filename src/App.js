@@ -90,7 +90,7 @@ function App() {
                 <div key={index} className="mb-4 is-flex is-justify-content-space-between">
                   <div style={{ width: '90%' }}>
                     {_todo.edit ? (
-                      <textarea class="textarea" onChange={onTodoTextAreaChange(index)} value={_todo.todo} />
+                      <textarea className="textarea" onChange={onTodoTextAreaChange(index)} value={_todo.todo} />
                     ) : (
                       <p className={_todo.done ? 'has-text-primary' : undefined} onClick={() => updateStatus(index)} style={_todo.done ? { textDecoration: 'line-through' } : undefined}>{_todo.todo}</p>
                     )}
